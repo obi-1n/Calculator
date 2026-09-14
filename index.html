@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="calculator" aria-label="Calculator">
+      <header class="calculator__header">
+        <span class="calculator__eyebrow">Everyday math</span>
+        <h1>Calculator</h1>
+      </header>
+
+      <section class="display" aria-live="polite">
+        <div class="display__expression" id="expression">&nbsp;</div>
+        <output class="display__value" id="display">0</output>
+      </section>
+
+      <section class="keypad" aria-label="Calculator keys">
+        <button class="key key--utility" data-action="clear" type="button">AC</button>
+        <button class="key key--utility" data-action="delete" type="button" aria-label="Delete last digit">⌫</button>
+        <button class="key key--operator" data-value="÷" type="button" aria-label="Divide">÷</button>
+        <button class="key key--operator" data-value="×" type="button" aria-label="Multiply">×</button>
+
+        <button class="key" data-value="7" type="button">7</button>
+        <button class="key" data-value="8" type="button">8</button>
+        <button class="key" data-value="9" type="button">9</button>
+        <button class="key key--operator" data-value="−" type="button" aria-label="Subtract">−</button>
+
+        <button class="key" data-value="4" type="button">4</button>
+        <button class="key" data-value="5" type="button">5</button>
+        <button class="key" data-value="6" type="button">6</button>
+        <button class="key key--operator" data-value="+" type="button">+</button>
+
+        <button class="key" data-value="1" type="button">1</button>
+        <button class="key" data-value="2" type="button">2</button>
+        <button class="key" data-value="3" type="button">3</button>
+        <button class="key key--equals" data-action="equals" type="button">=</button>
+
+        <button class="key key--zero" data-value="0" type="button">0</button>
+        <button class="key" data-value="." type="button">.</button>
+      </section>
+    </main>
+  </body>
+</html>
